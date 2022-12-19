@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,a,b,c,i;
+    int n,a,b,c;
     scanf("%d",&n);
     if(n==0||n==1)
     {
@@ -17,7 +17,7 @@ int main()
     {
         a=b;
         b=c;
-         c=a+b;
+        c=a+b;
     }
     if(c==n)
     {
