@@ -7,7 +7,6 @@ int main()
     scanf("%d",&n);
     froot=sqrt(n);
     iroot=froot;
-    
     if(froot==iroot)
     {
         printf("True");
@@ -16,4 +15,5 @@ int main()
     {
         printf("False");
     }
+    
 }
