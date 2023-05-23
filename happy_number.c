@@ -1,33 +1,26 @@
 #include<stdio.h>
-int hn(int n)
-{
-    int q,r,sum=0;
-    q=n;
-    while(q!=0)
-    {
-        r=q%10;
-        sum=sum+(r*r);
-        q=q/10;
-    }
-    return sum;
-}
 int main()
 {
-    int n,q;
+    int n,r;
     scanf("%d",&n);
-    q=n;
-    while(q!=1&&q!=4)
+    int sum=0;
+    while(sum!=1&&sum!=4)
     {
-       q=hn(q);
+        sum=0;
+        while(n!=0)
+        {
+            r=n%10;
+            sum=sum+r*r;
+            n=n/10;
+        }
+        n=sum;
     }
-    if(q==1)
+    if(sum==1)
     {
         printf("True");
     }
-    else if (q==4)
+    else
     {
         printf("False");
     }
-    
 }
- 
